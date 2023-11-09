@@ -1,0 +1,15 @@
+npm .active-link {
+    color: blue;
+    position: relative;
+}
+
+.active-link::before {
+    content: '';
+    position: absolute;
+    left: -10px;  /* Adjust as necessary */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;  /* Width of the blue bar */
+    height: 100%;
+    background-color: blue;
+}
